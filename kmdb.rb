@@ -167,6 +167,100 @@ hathaway = Actor.new
 hathaway["name"] = "Anne Hathaway"
 hathaway.save
 
+# Roles (Batman Begins)
+r = Role.new
+r["movie_id"] = begins["id"]
+r["actor_id"] = bale["id"]
+r["character_name"] = "Bruce Wayne"
+r.save
+
+r = Role.new
+r["movie_id"] = begins["id"]
+r["actor_id"] = caine["id"]
+r["character_name"] = "Alfred"
+r.save
+
+r = Role.new
+r["movie_id"] = begins["id"]
+r["actor_id"] = neeson["id"]
+r["character_name"] = "Ra's Al Ghul"
+r.save
+
+r = Role.new
+r["movie_id"] = begins["id"]
+r["actor_id"] = holmes["id"]
+r["character_name"] = "Rachel Dawes"
+r.save
+
+r = Role.new
+r["movie_id"] = begins["id"]
+r["actor_id"] = oldman["id"]
+r["character_name"] = "Commissioner Gordon"
+r.save
+
+# Roles (The Dark Knight)
+r = Role.new
+r["movie_id"] = dark_knight["id"]
+r["actor_id"] = bale["id"]
+r["character_name"] = "Bruce Wayne"
+r.save
+
+r = Role.new
+r["movie_id"] = dark_knight["id"]
+r["actor_id"] = ledger["id"]
+r["character_name"] = "Joker"
+r.save
+
+r = Role.new
+r["movie_id"] = dark_knight["id"]
+r["actor_id"] = eckhart["id"]
+r["character_name"] = "Harvey Dent"
+r.save
+
+r = Role.new
+r["movie_id"] = dark_knight["id"]
+r["actor_id"] = caine["id"]
+r["character_name"] = "Alfred"
+r.save
+
+r = Role.new
+r["movie_id"] = dark_knight["id"]
+r["actor_id"] = gyllenhaal["id"]
+r["character_name"] = "Rachel Dawes"
+r.save
+
+# Roles (The Dark Knight Rises)
+r = Role.new
+r["movie_id"] = rises["id"]
+r["actor_id"] = bale["id"]
+r["character_name"] = "Bruce Wayne"
+r.save
+
+r = Role.new
+r["movie_id"] = rises["id"]
+r["actor_id"] = oldman["id"]
+r["character_name"] = "Commissioner Gordon"
+r.save
+
+r = Role.new
+r["movie_id"] = rises["id"]
+r["actor_id"] = hardy["id"]
+r["character_name"] = "Bane"
+r.save
+
+r = Role.new
+r["movie_id"] = rises["id"]
+r["actor_id"] = gordon_levitt["id"]
+r["character_name"] = "John Blake"
+r.save
+
+r = Role.new
+r["movie_id"] = rises["id"]
+r["actor_id"] = hathaway["id"]
+r["character_name"] = "Selina Kyle"
+r.save
+
+
 # Prints a header for the movies output
 puts "Movies"
 puts "======"
