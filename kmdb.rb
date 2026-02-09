@@ -261,13 +261,13 @@ role["character_name"] = "Selina Kyle"
 role.save
 
 # Agent
-ari = Agent.new
-ari["name"] = "Ari Emanuel"
-ari.save
+ari_emanuel = Agent.new
+ari_emanuel["name"] = "Ari Emanuel"
+ari_emanuel.save
 
 # Assign agent to Christian Bale
-bale["agent_id"] = ari["id"]
-bale.save
+christian_bale["agent_id"] = ari_emanuel["id"]
+christian_bale.save
 
 # Prints a header for the movies output
 puts "Movies"
