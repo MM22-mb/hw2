@@ -122,7 +122,50 @@ rises["rated"] = "PG-13"
 rises["studio_id"] = warner["id"]
 rises.save
 
+# Actors
+bale = Actor.new
+bale["name"] = "Christian Bale"
+bale.save
 
+caine = Actor.new
+caine["name"] = "Michael Caine"
+caine.save
+
+neeson = Actor.new
+neeson["name"] = "Liam Neeson"
+neeson.save
+
+holmes = Actor.new
+holmes["name"] = "Katie Holmes"
+holmes.save
+
+oldman = Actor.new
+oldman["name"] = "Gary Oldman"
+oldman.save
+
+ledger = Actor.new
+ledger["name"] = "Heath Ledger"
+ledger.save
+
+eckhart = Actor.new
+eckhart["name"] = "Aaron Eckhart"
+eckhart.save
+
+gyllenhaal = Actor.new
+gyllenhaal["name"] = "Maggie Gyllenhaal"
+gyllenhaal.save
+
+hardy = Actor.new
+hardy["name"] = "Tom Hardy"
+hardy.save
+
+gordon_levitt = Actor.new
+gordon_levitt["name"] = "Joseph Gordon-Levitt"
+gordon_levitt.save
+
+hathaway = Actor.new
+hathaway["name"] = "Anne Hathaway"
+hathaway.save
 
 # Prints a header for the movies output
 puts "Movies"
