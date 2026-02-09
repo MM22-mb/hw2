@@ -260,6 +260,14 @@ r["actor_id"] = hathaway["id"]
 r["character_name"] = "Selina Kyle"
 r.save
 
+# Agent
+ari = Agent.new
+ari["name"] = "Ari Emanuel"
+ari.save
+
+# Assign agent to Christian Bale
+bale["agent_id"] = ari["id"]
+bale.save
 
 # Prints a header for the movies output
 puts "Movies"
