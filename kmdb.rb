@@ -121,6 +121,7 @@ the_dark_knight_rises["year_released"] = 2012
 the_dark_knight_rises["rated"] = "PG-13"
 the_dark_knight_rises["studio_id"] = warner_bros["id"]
 the_dark_knight_rises.save
+
 # Actors
 christian_bale = Actor.new
 christian_bale["name"] = "Christian Bale"
@@ -167,97 +168,97 @@ anne_hathaway["name"] = "Anne Hathaway"
 anne_hathaway.save
 
 # Roles (Batman Begins)
-r = Role.new
-r["movie_id"] = begins["id"]
-r["actor_id"] = bale["id"]
-r["character_name"] = "Bruce Wayne"
-r.save
+role = Role.new
+role["movie_id"] = batman_begins["id"]
+role["actor_id"] = christian_bale["id"]
+role["character_name"] = "Bruce Wayne"
+role.save
 
-r = Role.new
-r["movie_id"] = begins["id"]
-r["actor_id"] = caine["id"]
-r["character_name"] = "Alfred"
-r.save
+role = Role.new
+role["movie_id"] = batman_begins["id"]
+role["actor_id"] = michael_caine["id"]
+role["character_name"] = "Alfred"
+role.save
 
-r = Role.new
-r["movie_id"] = begins["id"]
-r["actor_id"] = neeson["id"]
-r["character_name"] = "Ra's Al Ghul"
-r.save
+role = Role.new
+role["movie_id"] = batman_begins["id"]
+role["actor_id"] = liam_neeson["id"]
+role["character_name"] = "Ra's Al Ghul"
+role.save
 
-r = Role.new
-r["movie_id"] = begins["id"]
-r["actor_id"] = holmes["id"]
-r["character_name"] = "Rachel Dawes"
-r.save
+role = Role.new
+role["movie_id"] = batman_begins["id"]
+role["actor_id"] = katie_holmes["id"]
+role["character_name"] = "Rachel Dawes"
+role.save
 
-r = Role.new
-r["movie_id"] = begins["id"]
-r["actor_id"] = oldman["id"]
-r["character_name"] = "Commissioner Gordon"
-r.save
+role = Role.new
+role["movie_id"] = batman_begins["id"]
+role["actor_id"] = gary_oldman["id"]
+role["character_name"] = "Commissioner Gordon"
+role.save
 
 # Roles (The Dark Knight)
-r = Role.new
-r["movie_id"] = dark_knight["id"]
-r["actor_id"] = bale["id"]
-r["character_name"] = "Bruce Wayne"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight["id"]
+role["actor_id"] = christian_bale["id"]
+role["character_name"] = "Bruce Wayne"
+role.save
 
-r = Role.new
-r["movie_id"] = dark_knight["id"]
-r["actor_id"] = ledger["id"]
-r["character_name"] = "Joker"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight["id"]
+role["actor_id"] = heath_ledger["id"]
+role["character_name"] = "Joker"
+role.save
 
-r = Role.new
-r["movie_id"] = dark_knight["id"]
-r["actor_id"] = eckhart["id"]
-r["character_name"] = "Harvey Dent"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight["id"]
+role["actor_id"] = aaron_eckhart["id"]
+role["character_name"] = "Harvey Dent"
+role.save
 
-r = Role.new
-r["movie_id"] = dark_knight["id"]
-r["actor_id"] = caine["id"]
-r["character_name"] = "Alfred"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight["id"]
+role["actor_id"] = michael_caine["id"]
+role["character_name"] = "Alfred"
+role.save
 
-r = Role.new
-r["movie_id"] = dark_knight["id"]
-r["actor_id"] = gyllenhaal["id"]
-r["character_name"] = "Rachel Dawes"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight["id"]
+role["actor_id"] = maggie_gyllenhaal["id"]
+role["character_name"] = "Rachel Dawes"
+role.save
 
 # Roles (The Dark Knight Rises)
-r = Role.new
-r["movie_id"] = rises["id"]
-r["actor_id"] = bale["id"]
-r["character_name"] = "Bruce Wayne"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight_rises["id"]
+role["actor_id"] = christian_bale["id"]
+role["character_name"] = "Bruce Wayne"
+role.save
 
-r = Role.new
-r["movie_id"] = rises["id"]
-r["actor_id"] = oldman["id"]
-r["character_name"] = "Commissioner Gordon"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight_rises["id"]
+role["actor_id"] = gary_oldman["id"]
+role["character_name"] = "Commissioner Gordon"
+role.save
 
-r = Role.new
-r["movie_id"] = rises["id"]
-r["actor_id"] = hardy["id"]
-r["character_name"] = "Bane"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight_rises["id"]
+role["actor_id"] = tom_hardy["id"]
+role["character_name"] = "Bane"
+role.save
 
-r = Role.new
-r["movie_id"] = rises["id"]
-r["actor_id"] = gordon_levitt["id"]
-r["character_name"] = "John Blake"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight_rises["id"]
+role["actor_id"] = joseph_gordon_levitt["id"]
+role["character_name"] = "John Blake"
+role.save
 
-r = Role.new
-r["movie_id"] = rises["id"]
-r["actor_id"] = hathaway["id"]
-r["character_name"] = "Selina Kyle"
-r.save
+role = Role.new
+role["movie_id"] = the_dark_knight_rises["id"]
+role["actor_id"] = anne_hathaway["id"]
+role["character_name"] = "Selina Kyle"
+role.save
 
 # Agent
 ari = Agent.new
