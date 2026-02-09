@@ -77,14 +77,52 @@
 
 # Delete existing data, so you'll start fresh each time this script is run.
 # Use `Model.destroy_all` code.
-# TODO!
+Role.destroy_all
+Actor.destroy_all
+Movie.destroy_all
+Studio.destroy_all
+Agent.destroy_all
 
 # Generate models and tables, according to the domain model.
-# TODO!
+# IN TERMINAL I WROTE THE FOLLOWING:
+#rails generate model Studio
+#rails generate model Movie
+#rails generate model Actor
+#rails generate model Role
+#rails generate model Agent
+#rails db:migrate
 
-# Insert data into the database that reflects the sample data shown above.
+
+# # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
-# TODO!
+# create studios
+warner = Studio.new
+warner["name"] = "Warner Bros."
+warner.save
+
+# create movies
+begins = Movie.new
+begins["title"] = "Batman Begins"
+begins["year_released"] = 2005
+begins["rated"] = "PG-13"
+begins["studio_id"] = warner["id"]
+begins.save
+
+dark_knight = Movie.new
+dark_knight["title"] = "The Dark Knight"
+dark_knight["year_released"] = 2008
+dark_knight["rated"] = "PG-13"
+dark_knight["studio_id"] = warner["id"]
+dark_knight.save
+
+rises = Movie.new
+rises["title"] = "The Dark Knight Rises"
+rises["year_released"] = 2012
+rises["rated"] = "PG-13"
+rises["studio_id"] = warner["id"]
+rises.save
+
+
 
 # Prints a header for the movies output
 puts "Movies"
